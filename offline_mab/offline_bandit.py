@@ -115,7 +115,7 @@ class DROmab:
         return np.exp(y - 1)
     
     def max_uv(self, action, batch, delta, n_action):
-        u, v = 0.5, 0.5
+        u, v = 0.5, 0.0
         u_grad, v_grad = 1, 1
         i = 0
         while (u_grad > self.epsilon or v_grad > self.epsilon) and i < self.n_iterations:
